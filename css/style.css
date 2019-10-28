@@ -1,5 +1,17 @@
-.container {
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
     width: 1920px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    width: 1280px;
     margin: 0 auto;
     border: 3px solid black;
     font-family: sans-serif;
@@ -69,13 +81,7 @@
 
 /* ****************** */
 
-body {
-    width: 1280px;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 
 .screenshots {
     width: 100%;
@@ -101,7 +107,7 @@ body {
 }
 
 .screenshots-wrapper {
-    width: 900px;
+    width: 580px;
     display: flex;
     justify-content: space-between;
     margin: 0 0 30px 0;
@@ -115,7 +121,7 @@ body {
 }
 
 .screenshots-photo-wrapper {
-    width: 659px
+    width: 359px;
 }
 
 .screenshots-photo-title {
@@ -204,7 +210,7 @@ body {
     color: #445161;
 }
 .dignity-wrapper {
-    width: 900px;
+    width: 580px;
     display: flex;
     justify-content: space-between;
     margin: 0 0 30px 0;
@@ -219,7 +225,7 @@ body {
 }
 
 .dignity-photo-wraper {
-    width: 855px
+    width: 535px;
 }
 .dignity-txt {
     font-family: sans-serif;
@@ -254,7 +260,7 @@ body {
 }
 
 .reviews-wrapper {
-    width: 900px;
+    width: 580px;
     display: flex;
     justify-content: space-between;
     margin: 0 0 30px 0;
@@ -270,7 +276,7 @@ body {
 
 .reviews-photo-wrapper {
     background-color: #ebebeb;
-    width: 810px
+    width: 490px
 }
 
 .reviews-photo-title {
