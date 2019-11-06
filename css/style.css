@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-
 }
+
 body {
     width: 1920px;
     margin: 0;
@@ -10,13 +10,13 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .container {
     width: 1280px;
     margin: 0 auto;
     border: 3px solid black;
     font-family: sans-serif;
     /* background-color: #445162; */
-
 }
 
 .text-white {
@@ -31,11 +31,10 @@ body {
     padding: 50px;
     box-sizing: border-box;
     background-color: #445162;
-
 }
 
 .main-header:after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     clear: both
@@ -46,8 +45,8 @@ body {
 }
 
 .main-header-photo {
-    width: 300px;
-    height: 120px;
+    width: 470px;
+    height: 215px;
     display: block;
     background-color: #fff;
     float: right
@@ -63,15 +62,15 @@ body {
 
 .main-header-list_item {
     padding: 0 0 0 20px;
-    position: relative
+    position: relative;
 }
 
 .main-header-list_item:before {
-    content: "";
+    content: '';
     display: block;
     width: 15px;
     height: 12px;
-    background-image: url(../img/check.png);
+    background-image: url('../img/check.png');
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
@@ -79,9 +78,8 @@ body {
     left: 1px;
 }
 
+
 /* ****************** */
-
-
 
 .screenshots {
     width: 100%;
@@ -99,8 +97,8 @@ body {
     width: 100%;
     margin: 0 0 35px 0;
     font-family: Arial;
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6em;
+    font-weight: 600;
     line-height: 1.32em;
     text-align: center;
     color: #445161;
@@ -142,7 +140,9 @@ body {
     text-align: justify;
 }
 
+
 /* ******** */
+
 .about {
     padding: 50px;
     box-sizing: border-box;
@@ -150,22 +150,24 @@ body {
 }
 
 .about:after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     clear: both
 }
+
 .about-title {
     display: block;
     width: 100%;
     margin: 0 0 35px 0;
     font-family: Arial;
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6em;
+    font-weight: 600;
     line-height: 1.32em;
     text-align: left;
     color: #445161;
 }
+
 .about-wrapper {
     float: left;
     width: 50%;
@@ -173,12 +175,12 @@ body {
 }
 
 .about-video {
-    width: 429px;
-    height: 244px;
+    width: 500px;
     display: block;
     background-color: #445161;
     float: right
 }
+
 .about-paragraph {
     font-family: sans-serif;
     color: #222222;
@@ -187,7 +189,10 @@ body {
     text-align: justify;
     padding-bottom: 1.5em;
 }
+
+
 /* ********* */
+
 .dignity {
     width: 100%;
     padding: 50px 50px 20px 50px;
@@ -198,35 +203,38 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .dignity-title {
     display: block;
     width: 100%;
     margin: 0 0 35px 0;
     font-family: Arial;
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6em;
+    font-weight: 600;
     line-height: 1.32em;
     text-align: center;
     color: #445161;
 }
+
 .dignity-wrapper {
     width: 580px;
     display: flex;
     justify-content: space-between;
     margin: 0 0 30px 0;
 }
+
 .dignity-photo {
     display: block;
     width: 30px;
     height: 30px;
     margin-top: 5px;
     background-color: #445161;
-    
 }
 
 .dignity-photo-wraper {
     width: 535px;
 }
+
 .dignity-txt {
     font-family: sans-serif;
     color: #222222;
@@ -235,7 +243,49 @@ body {
     text-align: justify;
     margin-top: 0px;
 }
+
+
 /* ***** */
+
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 0px solid black;
+}
+
+.review-item_photo {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 0 0;
+    background-color: #445161;
+    border-radius: 50%;
+}
+
+.review-item_txt {
+    width: 73%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    position: relative;
+    color: #222222;
+    font-size: 1.05em;
+    line-height: 1.35em;
+    text-align: justify;
+}
+
+.review-item_txt:before {
+    content: "";
+    border: 15px solid transparent;
+    border-right: 15px solid #ccc;
+    position: absolute;
+    top: 50px;
+    left: -30px;
+}
+
 .reviews {
     width: 100%;
     padding: 50px 50px 20px 50px;
@@ -252,8 +302,8 @@ body {
     width: 100%;
     margin: 0 0 35px 0;
     font-family: Arial;
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6em;
+    font-weight: 600;
     line-height: 1.32em;
     text-align: center;
     color: #445161;
@@ -298,17 +348,322 @@ body {
     line-height: 1.35em;
     text-align: justify;
 }
+
 .reviews-arrow {
     background: url(../img/bgview.png);
     width: 10px;
     outline: 0px solid black;
 }
+
 .reviews-autor {
     font-family: sans-serif;
     margin-left: 15px;
-    
     color: #989898;
     font-size: 1.05em;
     line-height: 1.35em;
-    text-align: justify; 
+    text-align: justify;
+}
+
+
+/* ****** */
+
+.buy {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.buy-title {
+    display: block;
+    width: 100%;
+    margin: 0 0 35px 0;
+    font-family: Arial;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1.32em;
+    text-align: center;
+    color: #445161;
+}
+
+.buy-list {
+    margin-left: 50px;
+    line-height: 1.8em;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 32%;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #445162;
+    font-family: Arial;
+    font-size: 1.17em;
+    font-weight: 550;
+    line-height: 1.32em;
+    color: #fff;
+    margin-top: auto;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.buy-card-header {
+    display: block;
+    width: 100%;
+    margin: 0 0 35px 0;
+    font-family: Arial;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.32em;
+    text-align: center;
+    color: #fff;
+}
+
+.buy-card-price {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 0 35px 0;
+    font-family: Arial;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 1.32em;
+    text-align: center;
+    color: #445162;
+}
+
+.buy-card-button {
+    width: 90%;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #445162;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.32em;
+    border: none;
+}
+
+.buy-card-button:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+
+/* ******* */
+
+.contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #445162;
+}
+
+.contacts-title {
+    display: block;
+    width: 100%;
+    margin: 35px 0 20px 0;
+    font-family: Arial;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1.32em;
+    text-align: center;
+    color: #fff;
+}
+
+.contacts-form-wraper {
+    width: 60%;
+    border: 0px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #445162;
+    font-family: Arial;
+    font-size: 1.17em;
+    font-weight: 550;
+    line-height: 1.32em;
+    color: #fff;
+    margin-top: auto;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.contacts-social-wraper {
+    width: 25%;
+    border: 0px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #445162;
+    font-family: Arial;
+    font-size: 1.17em;
+    font-weight: 550;
+    line-height: 1.32em;
+    color: #fff;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.contacts-form {
+    width: 800px;
+}
+
+.input-wrapper {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-text {
+    width: 90%;
+    height: 25px;
+    font-family: Arial;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+}
+
+.input-textarea {
+    width: 90%;
+    height: 125px;
+    font-family: Arial;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 8px;
+    resize: none;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.send-button {
+    width: 30%;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #445162;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.32em;
+    border: none;
+}
+
+.send-button:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+
+/* ******** */
+
+ul#social-networking {
+    margin: 0px 0 0 0;
+    text-align: center;
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    font-size: 12px;
+}
+
+#social-networking li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: url('../img/clean-social-icons.jpg') no-repeat;
+}
+
+#social-networking li,
+#social-networking a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    float: left;
+}
+
+.list-social {
+    list-style: none;
+    margin 0;
+    padding: 0;
+}
+
+.list-social li {
+    display: flex;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 0 0 20px 0px;
+}
+
+.icon-social {
+    background-image: url('../img/social.jpg');
+    background-repeat: no-repeat;
+    /*    display: block;*/
+    height: 40px;
+    transition: all 350ms ease-out;
+    -webkit-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    width: 40px;
+    outline: 0px solid red;
+    margin-right: 15px;
+}
+
+.list-social li:hover {
+    background-position-y: 9px;
+    /* Bonus image movement, no support by Firefox and Opera. Requires images with similar y position. */
+    filter: alpha(opacity=80);
+    /* Fallback for older versions of IE */
+    opacity: 0.5;
+}
+
+.skype {
+    background-position: 3px -4px;
+}
+
+.icq {
+    background-position: 3px -50px;
+}
+
+.mail {
+    background-position: 3px -90px;
+}
+
+.phone {
+    background-position: -1px -135px;
+}
+
+ul#social-networking li.twitter {
+    background-position: -68px -13px;
+}
+
+ul#social-networking li.facebook {
+    background-position: -3px -10px;
+}
+
+ul#social-networking li.linkedin {
+    background-position: -385px -10px;
+}
+
+ul#social-networking li.google {
+    background-position: -195px -10px;
+}
+
+ul#social-networking li.youtube {
+    background-position: -260px -75px;
+}
+
+ul#social-networking li:hover {
+    opacity: 0.6;
 }
