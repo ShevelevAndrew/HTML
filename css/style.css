@@ -545,6 +545,8 @@ a .cart-svg {
     margin-bottom: 30px;
 }
 
+
+
 .latest-project-wrapper {
     width: 250px;
     height: 180px;
@@ -577,6 +579,20 @@ a .cart-svg {
     font-family: 'Montserrat-Bold', 'Montserrat', sans-serif;
 }
 
+
+.block {
+    padding: 20px;
+    position: relative;
+   }
+.block::after {
+    content: ''; 
+    position: absolute;
+    left: 10px; bottom: 60px;
+    border: 25px solid transparent;
+    border-bottom: 20px solid #fbfaf8;
+   }
+
+
 .text-size-09 {
     font-size: 0.9em;
 }
@@ -596,3 +612,7 @@ a .cart-svg {
 button {
     border: 0px solid #615855;
 }
+
+
+
+
