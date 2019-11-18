@@ -1,0 +1,438 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*выбор основной оси*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*по основной оси*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  width: 497px;
+  /* можно попробовать задать min-width и max-width */
+  padding: 0;
+  border: 1px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  /* border: 1px solid black; */
+  /* background-color: #ccc; */
+}
+
+.menu .logo {
+  margin-right: 50px;
+}
+
+.menu .link-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  text-decoration: none;
+}
+
+.menu .link-logo-svg {
+  fill: #fff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.menu .link-logo-txt {
+  color: #fff;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.menu .link-logo:hover .link-logo-svg {
+  fill: #a79783;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.menu .link-logo:hover .link-logo-txt {
+  color: #a79783;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.menu .link-logo:active .link-logo-svg {
+  fill: #a79783;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.menu .link-logo:active .link-logo-txt {
+  color: #a79783;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.menu .cart-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.menu ul a:hover {
+  color: #a79783;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.cart-svg {
+  width: 20px;
+  height: 25px;
+}
+
+.search-svg {
+  width: 25px;
+  height: 25px;
+}
+
+a .cart-svg {
+  fill: #fff;
+}
+
+.cart-svg:hover {
+  fill: #a79783;
+}
+
+a .search-svg {
+  fill: #fff;
+}
+
+.search-svg:hover {
+  fill: #a79783;
+}
+
+.bg-g {
+  border: 2px solid red;
+}
+
+.bg-d {
+  border: 2px solid #ddaadd;
+}
+
+.carousel {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.p-a {
+  position: absolute;
+  top: 0px;
+}
+
+.p-r {
+  position: relative;
+}
+
+.carousel-indicators li {
+  position: relative;
+}
+
+.pagination-slider {
+  position: absolute;
+  width: 100%;
+  bottom: 3px;
+  left: 0px;
+  content: '';
+  padding-top: 0px;
+  margin-top: 0px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel-indicators {
+  padding-left: 0;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.pagination-link {
+  display: block;
+  width: 10px;
+  min-height: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.pagination-link:hover {
+  border: 2px solid gold;
+  background-color: transparent;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 900px;
+  border: 0px solid black;
+}
+
+.img-block {
+  display: block;
+  width: 100%;
+  min-width: 900px;
+}
+
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+}
+
+.control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+}
+
+.prev-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.svg-color {
+  fill: #888;
+}
+
+.control-next:hover .next-icon .svg-color {
+  fill: #fff;
+}
+
+.control-prev:hover .prev-icon .svg-color {
+  fill: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider-txt {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*выбор основной оси*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*по основной оси*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.slider-h2 {
+  color: #eee;
+  font-family: 'Montserrat-Bold', 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.slider-h1 {
+  display: block;
+  color: #eee;
+  font-family: 'Montserrat-Bold', 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.slider-p {
+  display: block;
+  color: #eee;
+  font-family: 'Montserrat-Bold', 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.btn-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  /*   min-height: 60px; */
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #998675;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-bottom: 4px solid brown;
+  -webkit-transition: 0.5s color, 0.5s background-color;
+  transition: 0.5s color, 0.5s background-color;
+}
+
+.btn-link:hover {
+  background-color: #fff;
+  color: #998675;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.btn-link:active {
+  background-color: #998675;
+  color: #fff;
+}
+
+.btn-link-txt {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=header.css.map */
