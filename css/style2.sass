@@ -13,7 +13,7 @@
 .video-content
     width: 100%
     height: 100%
-    min-width: 900px
+    // min-width: 900px
 .video::after
     content: ''
     position: absolute
@@ -145,5 +145,418 @@ ul.excellent-ul li
     font-size: 0.9em
     font-weight: 400
 
+.counters
+    width: 100%
+    // height: 300px
+    background:  linear-gradient(to right, rgb(33, 27, 25), rgb(78, 52, 39))
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    align-content: center
+    flex-wrap: wrap
+    margin-bottom: 50px
+  
+.counters-figure
+    display: block
+    width: 300px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: center
+    margin-top: 30px
+    margin-bottom: 40px
+    font-family: 'Montserrat-Regular', 'Montserrat', sans-serif
+    
+.counters-figure::after
+    content: ""
+    display: block
+    width: 50px
+    height: 4px
+    background-color: #eee
+    transition: 0.5s all
+.counters-figure:hover:after
+    background-color: rgb(78, 52, 39)
+    transition: 0.5s all
+.counters-figure img
+    display: block
+    width: 50px
+    height: 50px
+    margin-bottom: 20px
+.counters-figure p 
+    color: #eeeeee
+    margin-bottom: 20px
+    font-size: 2.9em
+    font-weight: 300
+.counters-figure figcaption
+    color: #c7b299
+    margin-bottom: 30px
+    font-size: 0.8em
+    font-weight: 400
+    text-transform: uppercase
 
+.recent
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: center
+    flex-wrap: wrap
+    font-family: 'Montserrat-Regular', 'Montserrat', sans-serif
+    color: #333
+.recent h2 
+    font-size: 1.9em
+    font-weight: 600
+.recent p
+    font-size: 0.9em
+    font-weight: 600
+    max-width: 600px
+    text-align: center
+    margin-bottom: 30px
+.recent-post
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    align-content: center
+    flex-wrap: wrap
+.recent-post-block
+    border: 1px solid #eee
+    width: 300px
+    height: 300px
+    position: relative
+    margin: 30px
 
+.recent-post-block img
+    width: 300px
+    margin-bottom: 10px
+.recent-post-block h3
+    font-size: 1.1em
+    font-weight: 600
+    text-align: left
+    margin-left: 15px
+    margin-right: 15px
+    margin-bottom: 10px
+.recent-post-block p
+    font-size: 0.8em
+    font-weight: 600
+    color: #aaa
+    text-align: left
+    margin-left: 15px
+    margin-right: 15px
+    margin-bottom: 10px
+.recent-post-block a
+    text-decoration: none
+    font-size: 0.8em
+    font-weight: 400
+    color: #c7b299
+    text-align: left
+    margin-left: 15px
+    position: relative
+
+.recent-post-block a::after
+    content: ''
+    position: absolute
+    right: -14px
+    bottom: 2px
+    border: 5px solid transparent
+    border-left: 5px solid #c7b299     
+.recent-post-block a:hover
+    color: #eee
+.recent-post-block a:hover::after
+    border-left: 5px solid #eee
+.recent-post-block:hover::after
+    content: '' 
+    position: absolute
+    top: 0
+    left: 0 
+    background: rgba(0,0,0,.5)
+    width: inherit
+    height: 179px
+    box-sizing: border-box
+.recent-post-block:hover
+    background: #362f2d
+.recent-post-block:hover h3
+    color: #c7b299
+.recent-post-block:hover p
+    color: #fff
+.recent-post-block-date
+    position: absolute
+    top: 10px
+    left: 10px
+    width: 50px
+    height: 50px
+    border-radius: 3px
+    z-index: 1
+
+.block-date-d
+    display: block
+    background: #444
+    width: 100%
+    height: 30px
+    text-align: center
+    color: #eee
+    line-height: 32px
+    font-size: 1.7em
+    font-weight: 400
+    border-top-left-radius: 3px 
+    border-top-right-radius: 3px
+.recent-post-block:hover .block-date-d
+    background: #c7b299
+.block-date-m
+    background: #222
+    width: 100%
+    height: 20px
+    display: block
+    color: #eee
+    text-align: center
+    line-height: 20px
+    font-size: 0.7em
+    font-weight: 300
+    border-bottom-left-radius: 3px 
+    border-bottom-right-radius: 3px
+.recent-post-block:hover .block-date-m
+    background: #a48d72
+
+.recent-button
+    width: 100%
+    text-align: center
+
+.svg-post-arrow
+    height: 25px
+    width: 27px
+    fill: #a48d72
+    margin: 5px
+.recent-button-next:hover .svg-post-arrow
+    fill: #d1d1d1
+.recent-button-prev:hover .svg-post-arrow
+    fill: #d1d1d1
+
+.partners
+    background-image: url('../image/parners-background.png')
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 10px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    align-content: center
+    flex-wrap: wrap
+.partners a img
+    margin: 15px
+    padding: 20px
+    position: relative
+.partners a:hover img
+    top: -5px
+    transition: top 1.5s 
+    box-shadow: 0px 0px 23px #000 inset 
+    border-radius: 10px
+
+.footer-one
+    background: #191919
+    color: #fff
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: top
+    align-content: top
+    flex-wrap: wrap
+.f-m
+    margin-bottom: 10px
+.f-p-b
+    padding-right: 10px
+    padding-left: 10px
+.f-c-gray
+    color: #555
+.f-s-s
+    font-size: 0.8em
+    line-height: 20px
+    font-weight: 400
+.footer-h2
+    display: block
+    // width: 300px
+    display: flex
+    // justify-content: space-between
+    align-items: center
+    // width: 131px
+    // text-decoration: none
+    
+    .logo-svg 
+        fill: #fff
+    .logo-txt
+        font-family: Raleway
+        color:  #ffffff
+        font-size: 24px
+        font-weight: 400
+        text-align: right
+.footer-block
+    font-family: Raleway
+    width: 15%
+    min-width: 200px
+    margin: 30px
+    padding: auto auto
+    a
+        text-decoration: none
+        font-size: 0.8em
+        font-weight: 400
+        color: #eee
+        text-align: left
+        margin-left: 15px
+        position: relative
+    a::after
+        content: ''
+        position: absolute
+        right: -14px
+        bottom: 2px
+        border: 5px solid transparent
+        border-left: 5px solid #eee
+.footer-block-wrapper
+    margin-bottom: 20px
+
+.footer-block-wrapper:hover p 
+    color: #eeeeee
+    cursor: pointer
+.footer-block-wrapper:hover p:nth-child(2)  
+    color: #a48d72
+    cursor: pointer
+.footer-block-wrapper span
+    color: #00bff3
+.f-b-flex
+    display: flex
+    flex-direction: row
+    justify-content: top
+    align-items: top
+    align-content: top
+    flex-wrap: wrap
+    min-width: 300px
+    img 
+        margin: 10px
+.footer-two
+    background: #111111
+    color: #fff
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: top
+    align-content: top
+    flex-wrap: wrap
+    padding: 40px
+.footer-two-block
+    width: 40%
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: top
+    align-content: top
+    flex-wrap: wrap
+    line-height: 30px
+    a 
+        display: block
+        text-align: left
+        text-decoration: none
+        margin-right: 20px
+    a:hover 
+        color: #a48d72
+    p 
+        margin-right: 25px
+    span 
+        color: #aaa
+.footer-two .footer-two-block:nth-child(2)
+    justify-content: flex-end
+    text-align: right
+    align-items: right
+    align-content: right
+    p 
+        display: block
+        text-align: right
+
+.burger-menu
+    display: none
+
+// .menu ul
+//     display: none
+// .carousel-inner
+//     display: none
+// .burger-menu
+//     display: none
+//     position: relative
+//     width: 100%
+//     height: 500px
+//     background: #00cc82
+//     color: #cdcdcd
+//     font-family: "Avenir Next", "Avenir", sans-serif
+//     z-index: 5
+//     a 
+//         text-decoration: none
+//         color: #000
+//         transition: color 0.3s ease
+//     a:hover
+//         color: #000
+//     .menu-toggle
+//         display: block
+//         position: absolute
+//         top: 50px
+//         left: 50px
+//         z-index: 7
+//         -webkit-user-select: none
+//         user-select: none
+//     .menu-toggle input
+//         display: block
+//         width: 50px
+//         height: 50px
+//         position: absolute
+//         top: -7px
+//         left: -5px
+//         cursor: pointer
+//         z-index: 8
+//         opacity: 0
+//         -webkit-touch-callout: none
+//     .menu-toggle span
+//         display: block
+//         width: 32px
+//         height: 4px
+//         z-index: 7
+//         border-radius: 4px
+//         position: relative
+//         background: #f1f
+//         margin-bottom: 7px
+//         transform-origin: 4px 0px
+//         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+//     .menu-toggle span:nth-last-child(2)
+//         transform-origin: 0% 100%
+//         width: 22px
+//         transition: width, 0.5s
+//     .menu-toggle input:checked ~ span
+//         opacity: 1
+//         transform: rotate(45deg) translate(0px, 0px)
+//         background: #232323
+//         width: 36px
+//         transition: width, 0.5s
+//     .menu-toggle input:checked ~ span:nth-last-child(3)
+//         opacity: 0
+//         transform: rotate(0deg) scale(0.2, 0.2)
+//     .menu-toggle input:checked ~ span:nth-last-child(2)
+//         opacity: 1
+//         transform: rotate(-45deg) translate(0, 0px)
+//         width: 36px
+//     .burger-menu-elem 
+//         position: absolute
+//         width: 400px
+//         height: 100vh
+//         margin: -100px 0 0 -60px
+//         padding: 50px
+//         padding-top: 125px
+//         background: #f1f
+//         list-style-type: none
+//         transform: translate(-100%, 0%)
+//         transform-origin: 0% 0%
+//         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+//         .menu-toggle input:checked ~ ul
+//             transform: scale(1.0, 1.0)
+//             opacity: 1
+//         .burger-menu-elem li 
+//             padding: 10px 0
+//             font-size: 30px

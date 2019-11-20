@@ -49,8 +49,9 @@
     .wrapper-services {
         display: flex;
         justify-content: center;
-        min-width: 900px;
+        /* min-width: 900px; */
         margin-bottom: 70px;
+        flex-wrap: wrap;
     }
     
     .web {
@@ -149,7 +150,7 @@
     }
     
     .text-boxes {
-        min-width: 900px;
+        /* min-width: 900px; */
         display: flex;
         justify-content: center;
         background: linear-gradient(to right, rgb(33, 27, 25), rgb(78, 52, 39));

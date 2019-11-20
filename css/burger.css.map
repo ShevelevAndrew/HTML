@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "burger.sass"
+    ],
+    "names": [],
+    "file": "burger.css"
+}
